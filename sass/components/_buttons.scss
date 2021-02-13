@@ -1,3 +1,7 @@
 .transparent{
-    background-color: red;
+    background-color: transparent;
+    border: none;
+}
+.orange{
+    background-color: $button-color;
 }
