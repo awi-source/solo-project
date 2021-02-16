@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="sass\style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+    <link rel="stylesheet" href="css\style.css">
 </head>
 <body>
     <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
@@ -28,8 +29,8 @@
       <li>Lorem ipsum dolor <strong>sit amet</strong>, consectetur <a href="#">consectetur adipiscing elit.</a>.</li>
     </ol>
 
-<button class="orange"><img src="images\icons\refresh.svg" height="10px" width="10px"></button>
-<button class="orange">+add new</button>
+<button class="orange"><img src="images\icons\refresh.svg" class="refresh" height="10px" width="10px"></button>
+<button class="orange">+ add new</button>
 <button class="transparent"><img src="images\icons\quit.svg" height="10px" width="10px"></button>
 <button class="transparent"><img src="images\icons\notification.svg" height="10px" width="10px"></button>
 <button class="transparent"><img src="images\icons\wallet.svg" height="10px" width="10px"></button>
@@ -46,33 +47,43 @@
 <button class="btn-links"><img src="images\icons\trash.svg" height="10px" width="10px"></button>
 <input>
 <br><br>
+
+<section class="statistics">
+<h3 class="section-title">GENERAL STATISTICS</h3>
 <form>
-  <input type="date"> <input type="date"><button class="orange"><img src="images\icons\refresh.svg" height="10px" width="10px"></button>
+  <input type="date"> <input type="date"><button class="orange"><img src="images\icons\refresh.svg" class="refresh" height="10px" width="10px"></button>
 </form>
+
+</section>
+
+<br><br><br>
+
+<i class="fas fa-bars"></i>
 
 <br><br><br>
 
 <nav>
-  <button class="transparent"><img src="images\icons\wallet.svg" height="10px" width="10px"></button>
-  <span>$1,500.00</span>
-  <button class="transparent"><img src="images\icons\notification.svg" height="10px" width="10px"></button>
-  <button class="transparent"><img src="images\icons\profile.svg" height="10px" width="10px"></button>
-  <span>Leonardo Dicaprio</span>
-  <button class="transparent"><img src="images\icons\quit.svg" height="10px" width="10px"></button>
+  <button class="transparent"><img src="images\icons\wallet.svg" class="top-icon" height="10px" width="10px"></button>
+  <span class="amount"><strong>$1,500.00</strong></span>
+  <button class="transparent"><img src="images\icons\arrow-down.svg" class="top-icon" height="10px" width="10px"></button>
+  <button class="transparent"><img src="images\icons\notification.svg" class="top-icon" height="10px" width="10px">
+  <button class="transparent"><img src="images\icons\profile.svg" class="top-icon" height="10px" width="10px"></button>
+  <span class="name">Leonardo Dicaprio</span>
+  <button class="transparent"><img src="images\icons\quit.svg" class="top-icon" height="10px" width="10px"></button>
 </nav>
 
 <br><br><br>
 
 <aside>
-  <p>Just do it</p>
+  <span class="logo">Just do it</span><i class="fas fa-bars"></i>
   <ul>
-    <li><a href="#"><img src="images\icons\general.svg" height="10px" width="10px"><span>General</span></a></li>
-    <li><a href="#"><img src="images\icons\details.svg" height="10px" width="10px"><span>Details</span></a></li>
-    <li><a href="#"><img src="images\icons\links.svg" height="10px" width="10px"><span>Links</span></a></li>
-    <li><a href="#"><img src="images\icons\banners.svg" height="10px" width="10px"></button><span>Banners</span></a></li>
-    <li><a href="#"><img src="images\icons\profile.svg" height="10px" width="10px"></button><span>Personal Data</span></a></li>
-    <li><a href="#"><img src="images\icons\payout.svg" height="10px" width="10px"></button><span>Payout</span></a></li>
-    <li><a href="#"><img src="images\icons\postback.svg" height="10px" width="10px"></button><span>Postback</span></a></li>
+    <li><a href="#"><img src="images\icons\general.svg" class="side-icon" height="10px" width="10px"><span>General</span></a></li>
+    <li><a href="#"><img src="images\icons\details.svg" class="side-icon" height="10px" width="10px"><span>Details</span></a></li>
+    <li><a href="#"><img src="images\icons\links.svg" class="side-icon" height="10px" width="10px"><span>Links</span></a></li>
+    <li><a href="#"><img src="images\icons\banners.svg" class="side-icon" height="10px" width="10px"></button><span>Banners</span></a></li>
+    <li><a href="#"><img src="images\icons\profile.svg" class="side-icon" height="10px" width="10px"></button><span>Personal Data</span></a></li>
+    <li><a href="#"><img src="images\icons\payout.svg" class="side-icon" height="10px" width="10px"></button><span>Payout</span></a></li>
+    <li><a href="#"><img src="images\icons\postback.svg" class="side-icon" height="10px" width="10px"></button><span>Postback</span></a></li>
   </ul>
 </aside>
 
