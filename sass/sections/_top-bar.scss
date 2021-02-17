@@ -1,10 +1,16 @@
 nav{
-    margin-left: 800px;
+    // margin-left: 800px;
+    width: 100%;
     background-color: white;
     font-family: $font-main;
+    padding: 0px;
+}
+nav .menu{
+    list-style-type: none;
     display: flex;
-    justify-content: end;
-    padding: 10px;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
 }
 .name{
     font-size: 14px;
@@ -17,5 +23,11 @@ nav{
 .top-icon{
     height: 14px;
     width: 14px;
-    margin-right: 20px;
+    // margin-right: 20px;
 }
+.left{
+    border-left: 1px solid $background-color;
+    height: 62px;
+    padding-left: 25px;
+}
+

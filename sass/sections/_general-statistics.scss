@@ -1,3 +1,27 @@
 .statistics{
     background-color: white;
+    padding: 10px;
+
+}
+
+.statistics form{
+    display: flex;
+    justify-content: center;
+}
+.statistics input{
+    font-family: $paragraph-font;
+}
+.statistics button{
+    margin: 5px;
+}
+.statistics table{
+    display: flex;
+    justify-content: center;
+}
+.statistics td{
+    border-bottom: 1px solid $background-color;
+}
+.results{
+    display: flex;
+    justify-content: center;
 }

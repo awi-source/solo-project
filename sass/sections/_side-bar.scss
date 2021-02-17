@@ -29,11 +29,10 @@ aside li{
     padding-left: 0px;
 }
 aside li:hover{
-    background-color: red;
+    border-left: 1px solid $button-color;
 }
 .logo{
     padding: 20px;
     font-family: $font-logo;
-    font-style: italic;
     font-size: 20px;
 }

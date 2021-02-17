@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Roboto+Condensed&family=Roboto:wght@100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
-    <link rel="stylesheet" href="css\style.css">
+    <link rel="stylesheet" href="sass\style.css">
 </head>
 <body>
     <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
@@ -49,10 +49,39 @@
 <br><br>
 
 <section class="statistics">
-<h3 class="section-title">GENERAL STATISTICS</h3>
+<h3 class="section-title">GENERAL STATISTIC</h3>
+<hr>
 <form>
   <input type="date"> <input type="date"><button class="orange"><img src="images\icons\refresh.svg" class="refresh" height="10px" width="10px"></button>
 </form>
+<hr>
+
+<div class="results">
+<table class="w-50">
+  <tr>
+    <td>Visit Signups</td>
+    <td>124</td>
+    </tr>
+  </table>   
+  <table class="w-100">
+    <tr>
+      <td>Net deposit</td>
+      <td>564</td>
+    </tr>
+  </table>
+  <table class="w-50">
+    <tr>
+      <td>FTDs</td>
+      <td>445</td>
+      </tr>
+    </table>   
+    <table class="w-100">
+      <tr>
+        <td>Turn over</td>
+        <td>432</td>
+      </tr>
+    </table>
+  </div>
 
 </section>
 
@@ -63,13 +92,15 @@
 <br><br><br>
 
 <nav>
-  <button class="transparent"><img src="images\icons\wallet.svg" class="top-icon" height="10px" width="10px"></button>
-  <span class="amount"><strong>$1,500.00</strong></span>
-  <button class="transparent"><img src="images\icons\arrow-down.svg" class="top-icon" height="10px" width="10px"></button>
-  <button class="transparent"><img src="images\icons\notification.svg" class="top-icon" height="10px" width="10px">
-  <button class="transparent"><img src="images\icons\profile.svg" class="top-icon" height="10px" width="10px"></button>
-  <span class="name">Leonardo Dicaprio</span>
-  <button class="transparent"><img src="images\icons\quit.svg" class="top-icon" height="10px" width="10px"></button>
+  <ul class="menu">
+  <li><button class="transparent left"><img src="images\icons\wallet.svg" class="top-icon" height="10px" width="10px"></button></li>
+  <li><span class="amount"><strong>$1,500.00</strong></span></li>
+  <li><button class="transparent"><img src="images\icons\arrow-down.svg" class="top-icon" height="10px" width="10px"></button></li>
+  <li><button class="transparent left"><img src="images\icons\notification.svg" class="top-icon" height="10px" width="10px"></li>
+  <li><button class="transparent left"><img src="images\icons\profile.svg" class="top-icon" height="10px" width="10px"></button></li>
+  <li><span class="name">Leonardo Dicaprio</span></li>
+  <li><button class="transparent left"><img src="images\icons\quit.svg" class="top-icon" height="10px" width="10px"></button></li>
+  </ul>
 </nav>
 
 <br><br><br>

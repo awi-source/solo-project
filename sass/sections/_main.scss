@@ -1,3 +1,8 @@
 body{
     background-color: $background-color;
 }
+.section-title{
+    font-family: $font-title;
+    color:$header-color;
+    font-weight: 200;
+}
