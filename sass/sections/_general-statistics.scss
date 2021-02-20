@@ -5,23 +5,24 @@
 .results .container{
    margin: auto;
 }
-.container .row{
+.statistics .container .row{
     display: flex;
     justify-content: center;
 }
-.col{
+.statistics .col{
     display: flex;
     justify-content: space-between;
     font-family: $paragraph-font;
     font-size: 14px;
     color: $header-color;
+    border-bottom: 1px solid $header-color;
+    margin: 10px;
 }    
 .statistics form{
     display: flex;
     justify-content: center;
     font-family: $paragraph-font;
     font-size: 14px;
-    margin-right: 10px;
 }
 .results{
     display: flex;
@@ -30,3 +31,7 @@
 .stat-title{
     font-weight: 600;
 }
+.stat-value{
+    color: black;
+}
+

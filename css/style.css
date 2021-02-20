@@ -3876,6 +3876,13 @@ html {
   filter: invert(1);
 }
 
+.btn-links {
+  background-color: transparent;
+  border: none;
+  height: 25px;
+  width: 25px;
+}
+
 /* Sections */
 body {
   background-color: #dfe6e9;
@@ -3994,14 +4001,14 @@ aside li:hover {
   margin: auto;
 }
 
-.container .row {
+.statistics .container .row {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
       justify-content: center;
 }
 
-.col {
+.statistics .col {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: justify;
@@ -4009,6 +4016,8 @@ aside li:hover {
   font-family: "Open Sans", Helvetica, Arial;
   font-size: 14px;
   color: #7f8c8d;
+  border-bottom: 1px solid #7f8c8d;
+  margin: 10px;
 }
 
 .statistics form {
@@ -4018,7 +4027,6 @@ aside li:hover {
       justify-content: center;
   font-family: "Open Sans", Helvetica, Arial;
   font-size: 14px;
-  margin-right: 10px;
 }
 
 .results {
@@ -4030,6 +4038,10 @@ aside li:hover {
 
 .stat-title {
   font-weight: 600;
+}
+
+.stat-value {
+  color: black;
 }
 
 /* Pages / Views */
