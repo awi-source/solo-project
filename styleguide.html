@@ -7,7 +7,7 @@
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Roboto+Condensed&family=Roboto:wght@100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
-    <link rel="stylesheet" href="sass\style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
@@ -29,7 +29,7 @@
       <li>Lorem ipsum dolor <strong>sit amet</strong>, consectetur <a href="#">consectetur adipiscing elit.</a>.</li>
     </ol>
 
-<button class="orange"><img src="images\icons\refresh.svg" class="refresh" height="10px" width="10px"></button>
+<button class="orange"><img src="images\icons\refresh.svg" class="refresh" height="15px" width="15px"></button>
 <button class="orange">+ add new</button>
 <button class="transparent"><img src="images\icons\quit.svg" height="10px" width="10px"></button>
 <button class="transparent"><img src="images\icons\notification.svg" height="10px" width="10px"></button>
@@ -52,38 +52,36 @@
 <h3 class="section-title">GENERAL STATISTIC</h3>
 <hr>
 <form>
-  <input type="date"> <input type="date"><button class="orange"><img src="images\icons\refresh.svg" class="refresh" height="10px" width="10px"></button>
+  <input type="date"> <input type="date"><button class="orange"><img src="images\icons\refresh.svg" class="refresh" height="15px" width="15px"></button>
 </form>
 <hr>
 
 <div class="results">
-<table>
-  <tr>
-    <td>Visit Signups</td>
-    <td>124</td>
-    </tr>
-  </table>   
-  <table>
-    <tr>
-      <td>Net deposit</td>
-      <td>564</td>
-    </tr>
-  </table>
-  <div class="w-100"></div>
-
-  <table>
-    <tr>
-      <td>FTDs</td>
-      <td>445</td>
-      </tr>
-    </table>   
-    <table class=>
-      <tr>
-        <td>Turn over</td>
-        <td>432</td>
-      </tr>
-    </table>
+  <div class="container">
+    <div class="row">
+      <div class="col col-3">
+        <span class="stat-title">Visit signups</span>
+        <span class="stat-value">124</span>
+      </div>
+      <div class="col col-3">
+        <span class="stat-title">Net deposit</span>
+        <span class="stat-value">564</span>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col col-3">
+        <span class="stat-title">FTD</span>
+        <span class="stat-value">445</span>
+      </div>
+      <div class="col col-3">
+        <span class="stat-title">Turn over</span>
+        <span class="stat-value">432</span>
+      </div>
+    </div>
   </div>
+</div>
+
+
 
 </section>
 

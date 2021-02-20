@@ -3,7 +3,7 @@ aside{
     width: 15%;
     height: 100vh;
     font-family: $font-main;
-    font-size: 12px;
+    font-size: 14px;
     padding-top: 20px;
 }
 aside span{
@@ -16,20 +16,26 @@ aside i{
 .side-icon{
     filter: invert(1);
     margin: 0 10px;
-    height: 12px;
-    width: 12px;
+    height: 14px;
+    width: 14px;
 }
 aside a{
     text-decoration: none;
     color: white;
+    padding: 10px;
+    margin: 10px;
 }
 
 aside li{
     margin: 20px 0px;
-    padding-left: 0px;
+    // padding-left: 0px;
+    
+   
 }
 aside li:hover{
-    border-left: 1px solid $button-color;
+    border-left: 3px solid $button-color;
+    height: 24px;
+    background-color: lighten(black, 20%);
 }
 .logo{
     padding: 20px;
