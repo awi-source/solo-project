@@ -14,3 +14,16 @@ h1, h2, h3, h4, h5, h6{
 p{
     font-family: $paragraph-font;
 }
+.container{
+    margin: 0px;
+    position: relative;
+}
+.container-main{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+.col{
+    padding: 0px;
+}

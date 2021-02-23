@@ -3904,11 +3904,30 @@ p {
   font-family: "Open Sans", Helvetica, Arial;
 }
 
-nav {
+.container {
+  margin: 0px;
+  position: relative;
+}
+
+.container-main {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  height: 100%;
   width: 100%;
+}
+
+.col {
+  padding: 0px;
+}
+
+nav {
+  position: fixed;
   background-color: white;
   font-family: "Roboto", sans-serif;
   padding: 0px;
+  right: 0%;
 }
 
 nav .menu {
@@ -3945,12 +3964,13 @@ nav .menu {
 }
 
 aside {
+  top: 0%;
   background-color: black;
-  width: 15%;
   height: 100vh;
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   padding-top: 20px;
+  margin-left: 0px;
 }
 
 aside span {
@@ -3958,7 +3978,7 @@ aside span {
 }
 
 aside i {
-  color: white;
+  color: #dfe6e9;
   font-size: 12px;
 }
 
@@ -3971,30 +3991,33 @@ aside i {
 
 aside a {
   text-decoration: none;
+  color: #dfe6e9;
+  padding: 10px 0px;
+  width: 197px;
+}
+
+aside a:hover {
+  border-left: 3px solid #e67e22;
+  height: 24px;
+  width: 197px;
+  background-color: #333333;
   color: white;
-  padding: 10px;
-  margin: 10px;
 }
 
 aside li {
-  margin: 20px 0px;
-  padding-left: 0px;
-}
-
-aside li:hover {
-  border-left: 3px solid #e67e22;
-  height: 24px;
-  background-color: #333333;
+  width: 100%;
+  padding: 10px 0px;
 }
 
 .logo {
   padding: 20px;
   font-family: "Dancing Script", cursive;
-  font-size: 20px;
+  font-size: 22px;
 }
 
 aside ul {
   border-bottom: 1px solid white;
+  padding-left: 0px;
 }
 
 .assigned-manager {
@@ -4007,21 +4030,30 @@ aside ul {
 .manager-name {
   color: white;
   font-family: "Roboto", sans-serif;
-  margin: 10px;
+  margin: 5px;
 }
 
 .manager-pic {
-  width: 50px;
-  height: 50px;
-  margin: 10px;
+  width: 40px;
+  height: 40px;
+  margin: 5px;
   background: url("https://i.postimg.cc/GpW2hV14/pexels-andrea-piacquadio-3760263-small.jpg");
   background-size: cover;
   border-radius: 50%;
 }
 
+.manager-description {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+}
+
 .statistics {
   background-color: white;
   padding: 10px;
+  margin-top: 10px;
+  box-shadow: 0 0 3px #504848;
 }
 
 .results .container {
@@ -4073,6 +4105,9 @@ aside ul {
 
 .links {
   background-color: white;
+  padding: 10px;
+  margin-top: 10px;
+  box-shadow: 0 0 3px #504848;
 }
 
 .links .container .row {

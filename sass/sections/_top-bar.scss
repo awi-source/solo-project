@@ -1,9 +1,11 @@
 nav{
+    position: fixed;
     // margin-left: 800px;
-    width: 100%;
+    // width: 100%;
     background-color: white;
     font-family: $font-main;
     padding: 0px;
+    right: 0%;
 }
 nav .menu{
     list-style-type: none;
