@@ -10,6 +10,7 @@ nav{
 nav .menu{
     list-style-type: none;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
@@ -33,3 +34,8 @@ nav .menu{
     padding-left: 25px;
 }
 
+@media (max-width: 767px){
+    nav .menu{
+        justify-content: center;
+    }
+}

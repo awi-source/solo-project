@@ -3868,6 +3868,7 @@ html {
   color: white;
   border: none;
   padding: 7px;
+  margin: 10px;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
 }
@@ -3934,6 +3935,8 @@ nav .menu {
   list-style-type: none;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -ms-flex-direction: row;
       flex-direction: row;
   -ms-flex-pack: end;
@@ -3963,10 +3966,17 @@ nav .menu {
   padding-left: 25px;
 }
 
+@media (max-width: 767px) {
+  nav .menu {
+    -ms-flex-pack: center;
+        justify-content: center;
+  }
+}
+
 aside {
   top: 0%;
   background-color: black;
-  height: 100vh;
+  height: 100%;
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   padding-top: 20px;
@@ -3994,19 +4004,21 @@ aside a {
   color: #dfe6e9;
   padding: 10px 0px;
   width: 197px;
-}
-
-aside a:hover {
-  border-left: 3px solid #e67e22;
-  height: 24px;
-  width: 197px;
-  background-color: #333333;
-  color: white;
+  border-left: 3px solid transparent;
 }
 
 aside li {
   width: 100%;
   padding: 10px 0px;
+}
+
+aside a:hover {
+  border-left: 3px solid #e67e22;
+  color: white;
+}
+
+aside li:hover {
+  background-color: #333333;
 }
 
 .logo {
@@ -4082,10 +4094,16 @@ aside ul {
 .statistics form {
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -ms-flex-pack: center;
       justify-content: center;
   font-family: "Open Sans", Helvetica, Arial;
   font-size: 14px;
+}
+
+.statistics form input {
+  max-height: 25px;
 }
 
 .results {
@@ -4103,6 +4121,14 @@ aside ul {
   color: black;
 }
 
+@media (max: 767px) {
+  .statistics form input {
+    width: 75px;
+    -ms-flex-pack: center;
+        justify-content: center;
+  }
+}
+
 .links {
   background-color: white;
   padding: 10px;
@@ -4115,7 +4141,7 @@ aside ul {
   display: flex;
   -ms-flex-pack: center;
       justify-content: center;
-  margin: 10px 0;
+  padding: 10px 0;
 }
 
 .links .col {
@@ -4123,8 +4149,13 @@ aside ul {
   display: flex;
   -ms-flex-pack: justify;
       justify-content: space-between;
-  border-bottom: 1px solid #dfe6e9;
   font-family: "Roboto", sans-serif;
+}
+
+.border-bottom {
+  border-bottom: 1px solid #dfe6e9;
+  padding-top: 10px;
+  margin-top: 0px;
 }
 
 .link-name {
@@ -4132,8 +4163,21 @@ aside ul {
   font-weight: 700;
 }
 
-.link-address {
+.link-address a {
+  text-decoration: none;
   color: #16a085;
+}
+
+.btn-links {
+  display: none;
+}
+
+.border-bottom:hover {
+  background-color: #dfe6e9;
+}
+
+.border-bottom:hover .btn-links {
+  display: block;
 }
 
 /* Pages / Views */

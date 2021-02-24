@@ -22,9 +22,13 @@
 }    
 .statistics form{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     font-family: $paragraph-font;
     font-size: 14px;
+}
+.statistics form input{
+    max-height: 25px;
 }
 .results{
     display: flex;
@@ -36,4 +40,9 @@
 .stat-value{
     color: black;
 }
-
+@media(max: 767px){
+    .statistics form input{
+        width: 75px;
+        justify-content: center;
+    }
+}
