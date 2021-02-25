@@ -1,7 +1,5 @@
 nav{
-    position: fixed;
-    // margin-left: 800px;
-    // width: 100%;
+    
     background-color: white;
     font-family: $font-main;
     padding: 0px;
@@ -14,6 +12,7 @@ nav .menu{
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
+    margin-top: 0%;
 }
 .name{
     font-size: 14px;
@@ -35,7 +34,14 @@ nav .menu{
 }
 
 @media (max-width: 767px){
+    nav{
+        position: fixed;
+    }
     nav .menu{
-        justify-content: center;
+        justify-content: left;
+        padding-left: 0px;
+    }
+    nav .notification{
+        padding-left: 0px;
     }
 }

@@ -3868,7 +3868,6 @@ html {
   color: white;
   border: none;
   padding: 7px;
-  margin: 10px;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
 }
@@ -3924,7 +3923,6 @@ p {
 }
 
 nav {
-  position: fixed;
   background-color: white;
   font-family: "Roboto", sans-serif;
   padding: 0px;
@@ -3943,6 +3941,7 @@ nav .menu {
       justify-content: flex-end;
   -ms-flex-align: center;
       align-items: center;
+  margin-top: 0%;
 }
 
 .name {
@@ -3967,9 +3966,16 @@ nav .menu {
 }
 
 @media (max-width: 767px) {
+  nav {
+    position: fixed;
+  }
   nav .menu {
-    -ms-flex-pack: center;
-        justify-content: center;
+    -ms-flex-pack: left;
+        justify-content: left;
+    padding-left: 0px;
+  }
+  nav .notification {
+    padding-left: 0px;
   }
 }
 
@@ -4030,6 +4036,11 @@ aside li:hover {
 aside ul {
   border-bottom: 1px solid white;
   padding-left: 0px;
+  display: none;
+}
+
+aside ul.visible {
+  display: block;
 }
 
 .assigned-manager {
@@ -4061,11 +4072,18 @@ aside ul {
       flex-direction: row;
 }
 
+@media (max: 767px) {
+  aside ul {
+    display: none;
+  }
+}
+
 .statistics {
   background-color: white;
   padding: 10px;
-  margin-top: 10px;
+  margin: 10px auto;
   box-shadow: 0 0 3px #504848;
+  max-width: 96%;
 }
 
 .results .container {
@@ -4100,6 +4118,7 @@ aside ul {
       justify-content: center;
   font-family: "Open Sans", Helvetica, Arial;
   font-size: 14px;
+  margin-top: 20px;
 }
 
 .statistics form input {
@@ -4132,8 +4151,13 @@ aside ul {
 .links {
   background-color: white;
   padding: 10px;
-  margin-top: 10px;
+  margin: 10px auto;
   box-shadow: 0 0 3px #504848;
+  max-width: 96%;
+}
+
+.links .container {
+  margin: 20px auto;
 }
 
 .links .container .row {
@@ -4142,6 +4166,8 @@ aside ul {
   -ms-flex-pack: center;
       justify-content: center;
   padding: 10px 0;
+  max-width: 70%;
+  margin: auto;
 }
 
 .links .col {

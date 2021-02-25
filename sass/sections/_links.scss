@@ -1,13 +1,19 @@
 .links{
     background-color: white;
     padding: 10px;
-    margin-top: 10px;
+    margin: 10px auto;
     box-shadow: 0 0 3px rgb(80, 72, 72);
+    max-width: 96%;
+}
+.links .container{
+    margin: 20px auto;
 }
 .links .container .row{
     display: flex;
     justify-content: center;
     padding: 10px 0;
+    max-width: 70%;
+    margin: auto;
 }
 .links .col{
     display: flex;
@@ -38,3 +44,12 @@
 .border-bottom:hover .btn-links{
     display: block;
 }
+// @media(max: 767px){
+//     .links .container .row{
+//        display: flex;
+//        flex-direction: row;
+//     .btn-links{
+//         justify-content: center;
+//     }
+//  }
+ 
