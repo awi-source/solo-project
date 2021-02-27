@@ -3883,9 +3883,21 @@ html {
   width: 25px;
 }
 
+.section {
+  background-color: white;
+  padding: 20px 20px 30px 20px;
+  margin: 10px auto;
+  box-shadow: 0 0 3px #d3cfcf;
+  max-width: 96%;
+}
+
+hr {
+  border: 1px solid #f6f2f2;
+}
+
 /* Sections */
 body {
-  background-color: #dfe6e9;
+  background-color: #f6f2f2;
 }
 
 .section-title {
@@ -3960,7 +3972,7 @@ nav .menu {
 }
 
 .left {
-  border-left: 1px solid #dfe6e9;
+  border-left: 1px solid #f6f2f2;
   height: 62px;
   padding-left: 25px;
 }
@@ -3994,7 +4006,7 @@ aside span {
 }
 
 aside i {
-  color: #dfe6e9;
+  color: #f6f2f2;
   font-size: 12px;
 }
 
@@ -4007,7 +4019,7 @@ aside i {
 
 aside a {
   text-decoration: none;
-  color: #dfe6e9;
+  color: #f6f2f2;
   padding: 10px 0px;
   width: 197px;
   border-left: 3px solid transparent;
@@ -4039,7 +4051,7 @@ aside ul {
   display: none;
 }
 
-aside ul.visible {
+aside ul.active {
   display: block;
 }
 
@@ -4072,22 +4084,10 @@ aside ul.visible {
       flex-direction: row;
 }
 
-@media (max: 767px) {
+@media (min-width: 767px) {
   aside ul {
-    display: none;
+    display: block;
   }
-}
-
-.statistics {
-  background-color: white;
-  padding: 10px;
-  margin: 10px auto;
-  box-shadow: 0 0 3px #504848;
-  max-width: 96%;
-}
-
-.results .container {
-  margin: auto;
 }
 
 .statistics .container .row {
@@ -4107,6 +4107,7 @@ aside ul.visible {
   color: #7f8c8d;
   border-bottom: 1px solid #7f8c8d;
   margin: 10px;
+  padding-top: 20px;
 }
 
 .statistics form {
@@ -4116,8 +4117,7 @@ aside ul.visible {
       flex-wrap: wrap;
   -ms-flex-pack: center;
       justify-content: center;
-  font-family: "Open Sans", Helvetica, Arial;
-  font-size: 14px;
+  font-family: "Roboto", sans-serif;
   margin-top: 20px;
 }
 
@@ -4132,8 +4132,18 @@ aside ul.visible {
       justify-content: center;
 }
 
+.results .container-stat {
+  margin: auto;
+}
+
+.results .container-stat .container {
+  margin: auto;
+}
+
 .stat-title {
-  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
 }
 
 .stat-value {
@@ -4141,19 +4151,11 @@ aside ul.visible {
 }
 
 @media (max: 767px) {
-  .statistics form input {
+  .section form input {
     width: 75px;
     -ms-flex-pack: center;
         justify-content: center;
   }
-}
-
-.links {
-  background-color: white;
-  padding: 10px;
-  margin: 10px auto;
-  box-shadow: 0 0 3px #504848;
-  max-width: 96%;
 }
 
 .links .container {
@@ -4179,7 +4181,7 @@ aside ul.visible {
 }
 
 .border-bottom {
-  border-bottom: 1px solid #dfe6e9;
+  border-bottom: 1px solid #f6f2f2;
   padding-top: 10px;
   margin-top: 0px;
 }
@@ -4199,11 +4201,15 @@ aside ul.visible {
 }
 
 .border-bottom:hover {
-  background-color: #dfe6e9;
+  background-color: #f6f2f2;
 }
 
 .border-bottom:hover .btn-links {
   display: block;
+}
+
+.btn-box {
+  margin-top: 30px;
 }
 
 /* Pages / Views */

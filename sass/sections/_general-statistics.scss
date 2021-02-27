@@ -1,18 +1,9 @@
 .statistics{
-    background-color: white;
-    padding: 10px;
-    margin: 10px auto;
-    box-shadow: 0 0 3px rgb(80, 72, 72);
-    max-width: 96%;
-}
-.results .container{
-   margin: auto;
-}
-.statistics .container .row{
+    .container .row{
     display: flex;
     justify-content: center;
-}
-.statistics .col{
+    }
+.col{
     display: flex;
     justify-content: space-between;
     font-family: $paragraph-font;
@@ -20,30 +11,40 @@
     color: $header-color;
     border-bottom: 1px solid $header-color;
     margin: 10px;
-}    
-.statistics form{
+    padding-top: 20px;
+    } 
+form{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    font-family: $paragraph-font;
-    font-size: 14px;
+    font-family: $font-main;
     margin-top: 20px;
-}
-.statistics form input{
+    input{
     max-height: 25px;
-}
+        }
+    }
+}       
 .results{
     display: flex;
     justify-content: center;
+    .container-stat{
+        margin: auto;
+    .container{
+    margin: auto;
+        }
+    }
 }
+
 .stat-title{
-    font-weight: 600;
+    font-family: $font-main;
+    font-weight: 700;
+    font-size: 16px;
 }
 .stat-value{
     color: black;
 }
 @media(max: 767px){
-    .statistics form input{
+    .section form input{
         width: 75px;
         justify-content: center;
     }

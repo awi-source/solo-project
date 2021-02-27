@@ -47,7 +47,7 @@ aside ul{
     border-bottom: 1px solid white;
     padding-left: 0px;
     display: none;
-    &.visible{
+    &.active{
         display: block;
     }
 }
@@ -76,11 +76,8 @@ aside ul{
     flex-direction: row;
 }
 
-@media(max: 767px){
-   aside ul{
-       display: none;
-    //    &.visible{
-    //        display: block;
-    //    }
-   }
-}
+@media(min-width: 767px){
+    aside ul{
+    display: block;
+    }
+    }
