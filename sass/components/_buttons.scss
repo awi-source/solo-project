@@ -13,6 +13,10 @@
     padding: 7px;
     font-family: $font-main;
     font-weight: 500;
+    &:hover{
+        background-color: darken($button-color, 10%);
+        cursor: pointer;
+    }
 } 
 .refresh{
     filter: invert(1);

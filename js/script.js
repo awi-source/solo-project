@@ -35,3 +35,26 @@ const chart = new Chart(ctx, {
       ]
     },
 });
+
+const modalBtn = document.querySelectorAll('.btn-link');
+console.log(modalBtn);
+const overlay = document.querySelector('.overlay');
+
+const modal = document.querySelector('.modal');
+
+const closeBtn = document.querySelector('.btn-close');
+
+function showModal() {
+  overlay.classList.add('show');
+  modal.classList.add('show');
+} 
+
+modalBtn.forEach(function(item){
+  item.addEventListener('click', showModal)
+})
+
+closeBtn.addEventListener('click', function(){
+  overlay.classList.remove('show');
+  modal.classList.remove('show');
+})
+ 

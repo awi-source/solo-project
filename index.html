@@ -89,7 +89,7 @@
                     <h3 class="section-title">links</h3>
                     <hr>
                     <div class="btn-box">
-                      <button class="orange d-block m-auto">+ add new</button>
+                      <button class="orange d-block m-auto btn-link">+ add new</button>
                     </div>
 
                     <div class="container">
@@ -187,10 +187,24 @@
                     
                   
                     <div class="btn-box">
-                      <button class="orange d-block m-auto">+ add new</button>
+                      <button class="orange d-block m-auto btn-link">+ add new</button>
                     </div>
                   </section>
                   
+        </div>
+        <div class="overlay" id="overlay">
+          <div class="modal" id="myModal">
+            <div class="btn-close js--close-modal">x</div>
+        
+            <h4>Add link</h4>
+            <form>
+              <label for="name">Website: </label>
+              <input type="text">
+              <label>Link: </label>
+              <input type="text">
+            </form>
+            <button class="js--close-modal orange">Add</button>
+          </div>
         </div>
     </div>    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
