@@ -1,11 +1,9 @@
 nav{
-    
     background-color: white;
     font-family: $font-main;
     padding: 0px;
     right: 0%;
-}
-nav .menu{
+}  .menu{
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
@@ -13,6 +11,12 @@ nav .menu{
     justify-content: flex-end;
     align-items: center;
     margin-top: 0%;
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    right: 0px;
+    z-index: 1;
 }
 .name{
     font-size: 14px;
@@ -32,7 +36,20 @@ nav .menu{
     height: 62px;
     padding-left: 25px;
 }
-
+.add{
+    position: relative;
+&::after{
+    position: absolute;
+    display: block;
+    content:'';
+    height: 8px;
+    width: 8px;
+    background: $button-color;
+    border-radius: 50%;
+    top: 30%;
+    left: 72%;
+    }
+}
 @media (max-width: 767px){
     nav{
         position: fixed;

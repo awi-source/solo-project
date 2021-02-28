@@ -6,6 +6,8 @@ aside{
     font-size: 14px;
     padding-top: 20px;
     margin-left: 0px;
+    position: relative;
+    z-index: 2;
 }
 aside span{
     color: white;
@@ -63,6 +65,7 @@ aside ul{
     margin: 5px;
 }
 .manager-pic{
+    position: relative;
     width: 40px;
     height: 40px;
     margin: 5px;
@@ -70,6 +73,16 @@ aside ul{
     // background-image: url(images\pexels-andrea-piacquadio-376026-small.jpg);
     background-size: cover;
     border-radius: 50%;
+    &::after{
+        position: absolute;
+        display: block;
+        content:'';
+        height: 10px;
+        width: 10px;
+        background: green;
+        border-radius: 50%;
+        left: 83%;
+    }
 }
 .manager-description{
     display: flex;

@@ -3895,6 +3895,18 @@ hr {
   border: 1px solid #f6f2f2;
 }
 
+.chart-container {
+  margin: 40px auto;
+  width: 60%;
+}
+
+.chart-container .stat-title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: #7f8c8d;
+}
+
 /* Sections */
 body {
   background-color: #f6f2f2;
@@ -3941,7 +3953,7 @@ nav {
   right: 0%;
 }
 
-nav .menu {
+.menu {
   list-style-type: none;
   display: -ms-flexbox;
   display: flex;
@@ -3954,6 +3966,12 @@ nav .menu {
   -ms-flex-align: center;
       align-items: center;
   margin-top: 0%;
+  background-color: white;
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  right: 0px;
+  z-index: 1;
 }
 
 .name {
@@ -3975,6 +3993,22 @@ nav .menu {
   border-left: 1px solid #f6f2f2;
   height: 62px;
   padding-left: 25px;
+}
+
+.add {
+  position: relative;
+}
+
+.add::after {
+  position: absolute;
+  display: block;
+  content: '';
+  height: 8px;
+  width: 8px;
+  background: #e67e22;
+  border-radius: 50%;
+  top: 30%;
+  left: 72%;
 }
 
 @media (max-width: 767px) {
@@ -3999,6 +4033,8 @@ aside {
   font-size: 14px;
   padding-top: 20px;
   margin-left: 0px;
+  position: relative;
+  z-index: 2;
 }
 
 aside span {
@@ -4069,12 +4105,24 @@ aside ul.active {
 }
 
 .manager-pic {
+  position: relative;
   width: 40px;
   height: 40px;
   margin: 5px;
   background: url("https://i.postimg.cc/GpW2hV14/pexels-andrea-piacquadio-3760263-small.jpg");
   background-size: cover;
   border-radius: 50%;
+}
+
+.manager-pic::after {
+  position: absolute;
+  display: block;
+  content: '';
+  height: 10px;
+  width: 10px;
+  background: green;
+  border-radius: 50%;
+  left: 83%;
 }
 
 .manager-description {
@@ -4088,6 +4136,11 @@ aside ul.active {
   aside ul {
     display: block;
   }
+}
+
+.statistics {
+  position: relative;
+  top: 80px;
 }
 
 .statistics .container .row {
@@ -4156,6 +4209,10 @@ aside ul.active {
     -ms-flex-pack: center;
         justify-content: center;
   }
+}
+
+.links {
+  margin-top: 100px;
 }
 
 .links .container {

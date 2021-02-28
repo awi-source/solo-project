@@ -39,7 +39,7 @@
                         <li><button class="transparent left"><img src="images\icons\wallet.svg" class="top-icon" height="10px" width="10px"></button></li>
                         <li><span class="amount"><strong>$1,500.00</strong></span></li>
                         <li><button class="transparent"><img src="images\icons\arrow-down.svg" class="top-icon" height="10px" width="10px"></button></li>
-                        <li><button class="transparent left"><img src="images\icons\notification.svg" class="top-icon notification" height="10px" width="10px"></li>
+                        <li class="add"><button class="transparent left"><img src="images\icons\notification.svg" class="top-icon notification" height="10px" width="10px"></li>
                         <li><button class="transparent left"><img src="images\icons\profile.svg" class="top-icon" height="10px" width="10px"></button></li>
                         <li><span class="name">Leonardo Dicaprio</span></li>
                         <li><button class="transparent left"><img src="images\icons\quit.svg" class="top-icon" height="10px" width="10px"></button></li>
@@ -77,6 +77,12 @@
                     </div>
                   </div>
                 </div>
+
+                <div class="chart-container">
+                  <span class="stat-title">Earnings chart</span>
+                  <canvas id="myChart"></canvas>
+                </div>
+                
                 </section>
 
                 <section class="section links">
@@ -187,7 +193,7 @@
                   
         </div>
     </div>    
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
