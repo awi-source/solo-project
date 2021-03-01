@@ -1,3 +1,4 @@
+//hide menu in xs
 function toggleMenu() {
     document.querySelector('.side-menu').classList.toggle('active');
   }
@@ -6,7 +7,7 @@ function toggleMenu() {
     toggleMenu()
   });
 
-  
+ //create chart from Chart.js
 const ctx = document.getElementById('myChart').getContext('2d');
 
 const chart = new Chart(ctx, {
@@ -36,6 +37,7 @@ const chart = new Chart(ctx, {
     },
 });
 
+// Open modal
 const modalBtn = document.querySelectorAll('.btn-link');
 console.log(modalBtn);
 const overlay = document.querySelector('.overlay');
@@ -58,3 +60,64 @@ closeBtn.addEventListener('click', function(){
   modal.classList.remove('show');
 })
  
+//Add link
+const addLink = document.forms['add-link'];
+console.log(addLink);
+
+addLink.addEventListener('submit', function(e){
+  e.preventDefault();
+  const inputValue = addLink.querySelector('input[type="text"]').value;
+  const linkUrl = addLink.querySelector('input[type="url"]').value;
+
+  const linkElement = document.createElement('div');
+  const linkNameWrapper = document.createElement('div')
+  const linkName = document.createElement('span');
+
+  const linkAddress = document.createElement('div');
+  const linkWrapper = document.createElement('span');
+  const link = document.createElement('a');
+
+  const linkButtonWrapper = document.createElement('div');
+  const linkButton = document.createElement('button');
+
+  const trashButtonWrapper = document.createElement('div');
+  const trashButton = document.createElement('button');
+
+  const allLinksWrapper = document.querySelector('.links .container');
+  console.log(allLinksWrapper);
+
+  linkName.textContent = inputValue;
+  link.textContent = linkUrl;
+
+  linkElement.classList.add('row', 'border-bottom');
+  linkNameWrapper.classList.add('col', 'col-md-5');
+  linkName.classList.add('link-name');
+
+  linkAddress.classList.add('col', 'col-md-5');
+  linkWrapper.classList.add('link-address');
+
+  linkButtonWrapper.classList.add('col', 'col-md-1');
+  linkButton.classList.add('btn-links', 'link');
+
+  trashButtonWrapper.classList.add('col-md-1');
+  trashButton.classList.add('btn-links', 'trash');
+
+  linkNameWrapper.appendChild(linkName);
+
+  linkWrapper.appendChild(link);
+  linkAddress.appendChild(linkWrapper);
+  
+
+  linkButtonWrapper.appendChild(linkButton);
+  trashButtonWrapper.appendChild(trashButton);
+
+  linkElement.appendChild(linkNameWrapper);
+  linkElement.appendChild(linkAddress);
+  linkElement.appendChild(linkButtonWrapper);
+  linkElement.appendChild(trashButtonWrapper);
+
+  allLinksWrapper.appendChild(linkElement);
+
+  overlay.classList.remove('show');
+  modal.classList.remove('show');
+})

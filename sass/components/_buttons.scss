@@ -20,6 +20,10 @@
 } 
 .refresh{
     filter: invert(1);
+    &:hover{
+        background-color: darken($button-color, 10%);
+        cursor: pointer;
+    }
 }
 .btn-links{
     background-color: transparent;

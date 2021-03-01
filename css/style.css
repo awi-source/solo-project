@@ -3881,6 +3881,11 @@ html {
   filter: invert(1);
 }
 
+.refresh:hover {
+  background-color: #bf6516;
+  cursor: pointer;
+}
+
 .btn-links {
   background-color: transparent;
   border: none;
@@ -3939,7 +3944,8 @@ hr {
 }
 
 .modal {
-  max-width: 600px;
+  height: 50%;
+  width: 50%;
   margin: auto;
   background-color: #ffffff;
   position: relative;
@@ -3971,8 +3977,14 @@ hr {
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column;
-  -ms-flex-align: space-between;
-      align-items: space-between;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+}
+
+.modal form input {
+  margin: 15px auto;
 }
 
 /* Sections */
@@ -4244,6 +4256,7 @@ aside ul.active {
 
 .statistics form input {
   max-height: 25px;
+  margin-right: 10px;
 }
 
 .results {
@@ -4323,6 +4336,10 @@ aside ul.active {
 
 .btn-links {
   display: none;
+}
+
+.link {
+  fill: orange;
 }
 
 .border-bottom:hover {
