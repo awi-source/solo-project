@@ -1,0 +1,1 @@
+https://awi-source.github.io/solo-project/
