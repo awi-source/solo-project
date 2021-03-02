@@ -46,9 +46,19 @@ form{
 .stat-value{
     color: black;
 }
-@media(max: 767px){
-    .section form input{
-        width: 75px;
-        justify-content: center;
+@media(max-width: 425px){
+    .section form{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        input{
+            margin-bottom: 10px;
+        }
+        .orange{
+            height: 40px;
+            width: 40px;
+            margin: auto;
+        }
     }
+
 }

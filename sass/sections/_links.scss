@@ -6,7 +6,7 @@
         display: flex;
         justify-content: center;
         padding: 10px 0;
-        max-width: 70%;
+        width: 70%;
         margin: auto;
         }
     }
@@ -47,11 +47,14 @@
 .btn-box{
     margin-top: 30px;
 }
-// @media(max: 767px){
-//     .links .container .row{
-//        display: flex;
-//        flex-direction: row;
-//     .btn-links{
-//         justify-content: center;
-//     }
-//  }
+@media(max-width: 767px){
+    .links .container{
+        width: 100%;
+     .row{
+        position: relative;
+        display: block;
+        justify-items: center;
+        width: 100%;
+        }
+    }
+}

@@ -55,3 +55,16 @@
         margin: 15px auto;
       }
   }
+  @media(max-width: 425px){
+    .modal{
+      height: 100%;
+      width: 100%;
+    }
+  }
+ @media(min-width: 426px) and (max-width: 1024px){
+  .modal{
+    height: 80%;
+    width: 60%;
+  }
+ }
+  

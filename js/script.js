@@ -39,7 +39,7 @@ const chart = new Chart(ctx, {
 
 // Open modal
 const modalBtn = document.querySelectorAll('.btn-link');
-console.log(modalBtn);
+
 const overlay = document.querySelector('.overlay');
 
 const modal = document.querySelector('.modal');
@@ -62,7 +62,6 @@ closeBtn.addEventListener('click', function(){
  
 //Add link
 const addLink = document.forms['add-link'];
-console.log(addLink);
 
 addLink.addEventListener('submit', function(e){
   e.preventDefault();
@@ -84,7 +83,6 @@ addLink.addEventListener('submit', function(e){
   const trashButton = document.createElement('button');
 
   const allLinksWrapper = document.querySelector('.links .container');
-  console.log(allLinksWrapper);
 
   linkName.textContent = inputValue;
   link.textContent = linkUrl;

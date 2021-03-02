@@ -3917,6 +3917,12 @@ hr {
   color: #7f8c8d;
 }
 
+@media (max-width: 1024px) {
+  .chart-container {
+    width: 100%;
+  }
+}
+
 * {
   box-sizing: border-box;
 }
@@ -3985,6 +3991,20 @@ hr {
 
 .modal form input {
   margin: 15px auto;
+}
+
+@media (max-width: 425px) {
+  .modal {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+@media (min-width: 426px) and (max-width: 1024px) {
+  .modal {
+    height: 80%;
+    width: 60%;
+  }
 }
 
 /* Sections */
@@ -4102,6 +4122,12 @@ nav {
   }
   nav .notification {
     padding-left: 0px;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 425px) {
+  nav .menu {
+    padding-left: 20px;
   }
 }
 
@@ -4284,11 +4310,22 @@ aside ul.active {
   color: black;
 }
 
-@media (max: 767px) {
+@media (max-width: 425px) {
+  .section form {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
   .section form input {
-    width: 75px;
-    -ms-flex-pack: center;
-        justify-content: center;
+    margin-bottom: 10px;
+  }
+  .section form .orange {
+    height: 40px;
+    width: 40px;
+    margin: auto;
   }
 }
 
@@ -4306,7 +4343,7 @@ aside ul.active {
   -ms-flex-pack: center;
       justify-content: center;
   padding: 10px 0;
-  max-width: 70%;
+  width: 70%;
   margin: auto;
 }
 
@@ -4352,6 +4389,19 @@ aside ul.active {
 
 .btn-box {
   margin-top: 30px;
+}
+
+@media (max-width: 767px) {
+  .links .container {
+    width: 100%;
+  }
+  .links .container .row {
+    position: relative;
+    display: block;
+    -ms-grid-column-align: center;
+        justify-items: center;
+    width: 100%;
+  }
 }
 
 /* Pages / Views */
